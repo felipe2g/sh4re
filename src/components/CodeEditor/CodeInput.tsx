@@ -19,11 +19,10 @@ export function CodeInput() {
     <Editor
       language="javascript"
       onMount={handleEditorDidMount}
-      theme="vs-dark"
+      theme="light"
       width="100%"
       height="100%"
       options={{
-        theme: "vs",
         minimap: {
           enabled: false
         },
