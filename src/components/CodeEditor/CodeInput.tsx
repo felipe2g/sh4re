@@ -3,14 +3,16 @@ import Editor, { EditorProps } from "@monaco-editor/react"
 import { useRef } from "react"
 
 export function CodeInput() {
-  const editorRef = useRef(null);
+  const editorRef = useRef<any>(null);
 
   function handleEditorDidMount(editor: any) {
     editorRef.current = editor
   }
 
   function getEditorValue() {
-    alert(editorRef.current.getValue())
+    if (editorRef.current) {
+      alert(editorRef.current.getValue());
+    }
   }
 
   return (
