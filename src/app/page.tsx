@@ -41,6 +41,7 @@ export default function App() {
               { value: '1d', label: '1 day' },
               { value: '3d', label: '3 day' },
             ]}
+            defaultValue={'1h'}
           /> :
           <Skeleton height={36} width={206} />
         }
