@@ -1,5 +1,5 @@
 "use client"
-import Editor, { EditorProps } from "@monaco-editor/react"
+import Editor from "@monaco-editor/react"
 import { useRef } from "react"
 
 export function CodeInput() {
@@ -23,7 +23,7 @@ export function CodeInput() {
       width="100%"
       height="100%"
       options={{
-        theme: "light",
+        theme: "vs",
         minimap: {
           enabled: false
         },
