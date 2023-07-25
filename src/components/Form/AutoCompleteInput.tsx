@@ -1,9 +1,9 @@
-import { Autocomplete, AutocompleteProps } from "@mantine/core";
+// import { Autocomplete, AutocompleteProps } from "@mantine/core";
 
-interface AutoCompleteInput extends React.ForwardRefExoticComponent<AutocompleteProps & React.RefAttributes<HTMLInputElement>>{}
+// interface AutoCompleteInput extends React.ForwardRefExoticComponent<AutocompleteProps & React.RefAttributes<HTMLInputElement>>{}
 
-export function AutoCompleteForm(props: AutoCompleteInput) {
-  return (
-    <Autocomplete {...props} />
-  )
-}
+// export function AutoCompleteForm(props: AutoCompleteInput) {
+//   return (
+//     <input {...props} />
+//   )
+// }
