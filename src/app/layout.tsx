@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { GlobalContextProvider } from "@/context/store"
+import { twMerge } from 'tailwind-merge'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={twMerge("h-screen")}>
         <GlobalContextProvider>
           <NavigationBar.Root />
           {children}
